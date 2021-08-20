@@ -1,0 +1,293 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  width: 85%;
+  margin: 2em auto 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Styling the Header which contains the Nav */
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.menuul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuli {
+  list-style-type: none;
+  margin: 0 0.5em 0 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Styling the Cards */
+
+.giving-space {
+  margin: 1em 0 3em 0;
+  padding: 1em 1em 1em 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+/* styling the hero section */
+
+.hero {
+  background-color: #0cceaf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0 1em 0;
+  height: 80vh;
+  justify-content: center;
+}
+
+.profileimage {
+  width: 400px;
+  width: 400px;
+}
+
+.name {
+  font-size: 36px;
+  margin: 0.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.stack {
+  font-size: 21px;
+  margin: 0.2em;
+  color: white;
+}
+
+.socialicons {
+  margin: 0.5em;
+}
+
+.social {
+  color: white;
+  font-size: 20px;
+  margin: 0.2em;
+}
+
+.buttons {
+  margin: 0.5em;
+}
+
+.downloadbutton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: white;
+}
+.hiremebutton {
+  background-color: #6c63ff;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #6c63ff;
+}
+
+/* styling the project section */
+
+.projectscontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project1 {
+  padding-bottom: 0.2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figure {
+  margin: 0;
+}
+
+.imagecaption {
+  text-align: center;
+  margin-top: 3px;
+}
+
+/* Styling Education and Experience */
+.textmuted {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.textmuted2 {
+  font-size: 14px;
+}
+
+/* Styling the Skill Section */
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.html,
+.css,
+.js,
+.figma {
+  padding: 1em 1em 0 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill {
+  font-size: 100px;
+  color: #82c91e;
+}
+
+/* Styling footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 575px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .projectscontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .html,
+  .css,
+  .js,
+  .figma {
+    margin: 0.5em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hnglogo,
+  .ingressivelogo,
+  .zurilogo {
+    width: 50px;
+    margin: 1em;
+  }
+}
+
+/* Making Responsive navbar */
+.nav-handler {
+  align-self: center;
+  align-items: flex-end;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  border-radius: 4px;
+  margin: 4px;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  display: none;
+}
+
+.bar {
+  width: 2.5rem;
+  height: 3px;
+  background: black;
+  border-radius: 8px;
+  display: inline-block;
+  transition: inherit;
+}
+
+.bar:nth-child(2) {
+  width: 1.5rem;
+  align-self: flex-end;
+}
+
+/* Rsponsiveness */
+
+@media screen and (max-width: 750px) {
+  .nav-handler {
+    display: flex;
+  }
+  .menuul {
+    display: none;
+  }
+
+  /* ========= nav open state ====== */
+  nav.open {
+    background: transparent;
+  }
+
+  nav.open .menuul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* parent(nav.open) must have a position */
+    top: 6rem;
+    right: 0;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2rem);
+    margin-right: 20.8px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  nav.open .menuul .menuli {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav.open .menuul .menuli a {
+    color: #6c63ff;
+    text-align: center;
+    padding: 20px 30px;
+    font-weight: bold;
+  }
+}
