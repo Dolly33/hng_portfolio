@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="aboutsection giving-space">
+    <div class="aboutsection giving-space" id="about">
         <h2>About Me</h2>
         <p>Hello! I’m Dolly Kpobi. I am passionate about UI/UX design and Web Design. 
             I am a skilled front-end developer and master of designtools such as Photoshop and Figma.
@@ -175,8 +175,13 @@
 const navOpener = document.querySelector(".nav-handler");
 const navBar = document.querySelector(".nav-bar");
 
-navOpener.addEventListener('click', function() {
+navOpener.addEventListener('click', function(event) {
   navBar.classList.toggle('open');
+  event.stopPropagation()
+})
+
+document.addEventListener('click', function(){
+    navBar.classList.remove('open');
 })
   </script>
 </body>
